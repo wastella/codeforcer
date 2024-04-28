@@ -7,14 +7,17 @@ deepseek-coder-6.7b-instruct is an open source LLM that can be easily run on mos
 ## How Do I Use This?
 
 To use this tool, first you have to pull the repository to your local computer using:
+
 `git pull https://github.com/wastella/codeforcer.git`
 
 Once you have it in your local computer, navigate to the directory.
 
 After that you have to download the requirements using:
+
 `pip install -r requirements.txt`
 
 Once the requirements are downloaded, all you have to do is run:
+
 `streamlit run codeforcer.py`
 
 A browser app should pop up, that looks something like this:
