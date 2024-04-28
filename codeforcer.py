@@ -12,7 +12,7 @@ with st.form("my-form"):
 if submit_button:
     problem = get_problem(url)
 
-    messages =[{"role": "user", "content" :  "Please write a solution to the following competitive programming problem in C++, make sure to include a paragraph at the end explaining the solution:{}".format(url)}]
+    messages =[{"role": "user", "content" :  "Please write a solution to the following competitive programming problem in C++, make sure to include a paragraph at the end explaining the solution:{}".format(problem)}]
 
     tokenizer = AutoTokenizer.from_pretrained("deepseek-ai/deepseek-coder-6.7b-instruct", trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained("deepseek-ai/deepseek-coder-6.7b-instruct", trust_remote_code=True)
